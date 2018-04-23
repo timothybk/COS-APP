@@ -7,6 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'COS-APP';
   constructor(private router: Router) {}
 }
