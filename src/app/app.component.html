@@ -1,14 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<div>
-  <ul>
-    <li [routerLinkActive]="['active']">
-      <a [routerLink]="['/list']">n2 list</a>
-    </li>
-  </ul>
-</div>
-<router-outlet></router-outlet>
+<!-- from bootstrap example -->
+<app-navbar></app-navbar>
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <router-outlet></router-outlet>
+  </div>
+
+</main><!-- /.container -->
+
