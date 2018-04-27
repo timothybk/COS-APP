@@ -1,5 +1,11 @@
-<ul class='list-group'>
-  <li class='list-group-item' *ngFor='let item of items | async'>
-    {{item.name}} {{item.N2 | date:'fullDate'}}
-  </li>
-</ul>
+<div class="row">
+  <div class="col">
+    <ngb-accordion [closeOthers]="true">
+      <ngb-panel *ngFor='let item of items | async' title="{{item.name}}">
+        <ng-template ngbPanelContent>
+          <app-n2-list-item [n2Item]="item"></app-n2-list-item>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </div>
+</div>
