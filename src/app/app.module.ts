@@ -12,17 +12,13 @@ import { environment } from '../environments/environment';
 import { N2ListComponent } from './n2-list/n2-list.component';
 import { HomeComponent } from './home/home.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
-import { N2ListItemComponent } from './n2-list/n2-list-item/n2-list-item.component';
-import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     N2ListComponent,
     HomeComponent,
-    AppNavbarComponent,
-    N2ListItemComponent,
-    SharedComponent
+    AppNavbarComponent
   ],
   imports: [
     BrowserModule,
